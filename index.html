@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similarity between Texts</title>
+</head>
+<body>
+    <h1>KNOW THE SEMANTIC SIMILARITY BETWEEN YOUR TEXTS</h1>
+    <P>Enter text1</P>
+    <form action="/" method="POST">
+        <input type = "text" name = "text1" placeholder="text...">
+        <P>Enter text2</P>
+        <input type = "text" name = "text2" placeholder="text...">
+        <P></P>
+        <input class="btn btn-primary mt-3" type="submit" submit = "predict similarity">
+    </form>
+    {% if prediction %}
+        <p>Similarity : {{prediction}}</p>
+    {% endif %}
+    
+</body>
+</html>
